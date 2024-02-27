@@ -14,6 +14,20 @@ def tekrar_edilen_ayiran(arrays):
 print(f"{tekrar_edilen_ayiran(nums[:])}\n {50*'*'}  ")
 
 #endregion
+#region#*2.yol
+
+
+def else_way(arrays):
+    arrays = set(arrays)
+    arrays = list(arrays)
+    arrays.sort()
+    return arrays
+
+print(f"{else_way(nums[:])}\n {50*'*'}  ")
+
+#endregion
+
+
 
 
 
