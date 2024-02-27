@@ -34,7 +34,14 @@ def third_way(arrays):
 print(f"{third_way(nums[:])}\n {50*'*'}  ")
 #endregion
 
+#region#*4.yol
+def fourth_way(params):
+    x = lambda nums: [i  for i in nums if i not in nums]
+    return x(params)
+nums_2 = [20,20,14,11,23,14,23,11,56,22,56,77]
+print(f"{third_way(nums_2[:])}\n {50*'*'}  ")
 
+#endregion
 
 
 
