@@ -23,12 +23,13 @@ def longest_common_prefix(params):
 
     common_letters_1 = list(filter( lambda harf :common_letters.count(harf) >1, common_letters )) #* burdaki listede tüm kelimelrde olmayıp bazı kelimeler arasında olan harfleri siliyoruz
     x = []
-    for i in common_letters_1:
+    for i in common_letters_1:#* bu döngüde tekrarlanan harfler siliniyor
         if x.count(i) == 0:
             x.append(i)
         elif x.count(i) > 1 :
             break
-    if len(x) >0:
+
+    if len(x) >0: #* bu döngüde eğerki hiç tekrarlanan elaman yoksa [""] verisi döndürülüyor
         letters = ""
         for i in x:
             letters += i
@@ -36,7 +37,6 @@ def longest_common_prefix(params):
     else: 
         return [""]
 
-    # print(common_letters)
  
 print(longest_common_prefix(arrays[::]))
 
