@@ -1,4 +1,5 @@
-arrays = ["dog","racecar","car"]
+
+arrays =  ["fliower", "fliow", "flioght","flio"]
 #* bu soruda tek bir tane liste elamanını alman yeterli olur.
 #*sebebi ise 2 elemalı bir listede hepsinin ortak elemanı olmalı.
 #*ikisinde olup birtanesinde olmazsa sayılmaz
@@ -38,3 +39,22 @@ def longest_common_prefix(params):
     # print(common_letters)
  
 print(longest_common_prefix(arrays[::]))
+
+#todo chatgbt`s codes
+def longestCommonPrefix(strs):
+    if not strs:
+        return ""
+    
+    # En kısa dizeyi bul
+    min_str = min(strs, key=len)
+    
+    for i, char in enumerate(min_str):
+        for string in strs:
+            if string[i] != char:
+                return min_str[:i]
+    
+    return min_str
+
+
+strs = ["flower", "flow", "flight"]
+print(longestCommonPrefix(strs))
