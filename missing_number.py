@@ -1,5 +1,5 @@
-
-x =[1, 3, 5, 4, 2, 8, 9, 0]
+from random_array_of_num import *
+x = random_array()
 def missing_number(lst):
     lst.sort()
     x = []
