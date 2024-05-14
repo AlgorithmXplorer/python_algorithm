@@ -12,4 +12,11 @@ def Shuffle_string(index_list , str_word):
 
 Shuffle_string(indices,s)
 
+#* Chatgbt ' s code
+def shuffle_string(index_list, str_word):
+    result = [''] * len(index_list)  # Sonucu saklamak için bir liste oluştur
+    for i, char in zip(index_list, str_word):  # Her bir indeks ve karakter için döngü
+        result[i] = char  # Doğru indekse doğru karakteri yerleştir
+    return ''.join(result)  # Sonucu birleştirerek döndür
+
 
