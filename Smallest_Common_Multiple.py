@@ -1,7 +1,6 @@
 
 
-import random_array_of_num
-#todo sayıların asal çarpanları bulunr. ortak asal çarpanları varsa bölünür ve geriya kalan sayılarada aynı işlem yapılır.
+
 nums = [88, 76, 97]
 def main(array):
     def inner(numbers:list,slice_num:int):
@@ -41,4 +40,25 @@ def main(array):
 
 main([131, 6])
 
+#region#todo chatgbt's code
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
+def lcm(a, b):
+    return abs(a * b) // gcd(a, b)
+
+def find_lcm_of_list(nums):
+    result = nums[0]
+    for num in nums[1:]:
+        result = lcm(result, num)
+    return result
+
+
+nums = [50, 75, 100]
+result = find_lcm_of_list(nums)
+print("LCM:", result)
+
+
+#endregion
