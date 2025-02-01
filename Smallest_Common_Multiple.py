@@ -1,7 +1,7 @@
 
 
 
-nums = [88, 76, 97]
+nums = [160,432,50,300]
 def main(array):
     def inner(numbers:list,slice_num:int):
         Ability_to_divide = [[],[]]
@@ -36,9 +36,10 @@ def main(array):
     result = 1
     for i in last_list:
         result*=i
+    print(result)
 
 
-main([131, 6])
+main(nums)
 
 #region#todo chatgbt's code
 def gcd(a, b):
@@ -56,7 +57,7 @@ def find_lcm_of_list(nums):
     return result
 
 
-nums = [50, 75, 100]
+# nums = [50, 75, 100]
 result = find_lcm_of_list(nums)
 print("LCM:", result)
 
